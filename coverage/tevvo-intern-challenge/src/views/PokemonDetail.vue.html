@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for tevvo-intern-challenge/src/views/PokemonDetail.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">tevvo-intern-challenge/src/views</a> PokemonDetail.vue</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/70</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/70</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+<span class="cstat-no" title="statement not covered" >  &lt;div class="container mx-auto px-4"&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;router-link to="/pokemon" class="text-indigo-600 underline mb-4 block"&gt;&amp;larr; Back&lt;/router-link&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div v-if="loading"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;LoadingSkeleton /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div v-else-if="error"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;ErrorAlert :message="error" /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div v-else-if="pokemon" class="flex flex-col md:flex-row gap-8"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;img :src="pokemon.sprites.front_default" :alt="pokemon.name" class="w-48 h-48 object-contain rounded" /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;div&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;h2 class="text-2xl font-bold capitalize mb-2"&gt;{{ pokemon.name }}&lt;/h2&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p&gt;&lt;strong&gt;ID:&lt;/strong&gt; {{ pokemon.id }}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p&gt;&lt;strong&gt;Type:&lt;/strong&gt; {{ pokemon.types.map(t =&gt; t.type.name).join(', ') }}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p&gt;&lt;strong&gt;Height:&lt;/strong&gt; {{ pokemon.height }}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p&gt;&lt;strong&gt;Weight:&lt;/strong&gt; {{ pokemon.weight }}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p&gt;&lt;strong&gt;Stats:&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;ul class="ml-4 list-disc"&gt;</span>
+<span class="cstat-no" title="statement not covered" >          &lt;li v-for="s in pokemon.stats" :key="s.stat.name"&gt;</span>
+<span class="cstat-no" title="statement not covered" >            {{ s.stat.name }}: {{ s.base_stat }}</span>
+<span class="cstat-no" title="statement not covered" >          &lt;/li&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/ul&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;button</span>
+<span class="cstat-no" title="statement not covered" >          @click="toggleFavorite"</span>
+<span class="cstat-no" title="statement not covered" >          class="mt-4 px-4 py-2 rounded border"</span>
+<span class="cstat-no" title="statement not covered" >          :class="isFav ? 'bg-yellow-400 text-white' : 'bg-white text-yellow-500 border-yellow-400'"</span>
+        &gt;
+<span class="cstat-no" title="statement not covered" >          {{ isFav ? 'Remove from Favorites' : 'Add to Favorites' }}</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/button&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div v-else class="text-red-500"&gt;Pokémon not found.&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >  &lt;/div&gt;</span>
+&lt;/template&gt;
+&nbsp;
+&lt;script setup&gt;
+<span class="cstat-no" title="statement not covered" >import { ref, onMounted } from 'vue'</span>
+<span class="cstat-no" title="statement not covered" >import { useRoute } from 'vue-router'</span>
+<span class="cstat-no" title="statement not covered" >import axios from 'axios'</span>
+<span class="cstat-no" title="statement not covered" >import LoadingSkeleton from '../components/LoadingSkeleton.vue'</span>
+<span class="cstat-no" title="statement not covered" >import ErrorAlert from '../components/ErrorAlert.vue'</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const route = useRoute()</span>
+<span class="cstat-no" title="statement not covered" >const pokemon = ref(null)</span>
+<span class="cstat-no" title="statement not covered" >const loading = ref(true)</span>
+<span class="cstat-no" title="statement not covered" >const error = ref('')</span>
+<span class="cstat-no" title="statement not covered" >const FAVORITES_KEY = 'favorites_pokemon'</span>
+<span class="cstat-no" title="statement not covered" >const isFav = ref(false)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >onMounted(async () =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${route.params.name}`)</span>
+<span class="cstat-no" title="statement not covered" >    pokemon.value = res.data</span>
+<span class="cstat-no" title="statement not covered" >    checkFav()</span>
+<span class="cstat-no" title="statement not covered" >  } catch (e) {</span>
+<span class="cstat-no" title="statement not covered" >    error.value = 'Failed to load Pokémon.'</span>
+<span class="cstat-no" title="statement not covered" >    pokemon.value = null</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  loading.value = false</span>
+<span class="cstat-no" title="statement not covered" >})</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >function getFavs() {</span>
+<span class="cstat-no" title="statement not covered" >  return JSON.parse(localStorage.getItem(FAVORITES_KEY) || '[]')</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >function checkFav() {</span>
+<span class="cstat-no" title="statement not covered" >  isFav.value = !!getFavs().find(x =&gt; x.name === pokemon.value?.name)</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >function toggleFavorite() {</span>
+<span class="cstat-no" title="statement not covered" >  let favs = getFavs()</span>
+<span class="cstat-no" title="statement not covered" >  if (isFav.value) {</span>
+<span class="cstat-no" title="statement not covered" >    favs = favs.filter(x =&gt; x.name !== pokemon.value.name)</span>
+<span class="cstat-no" title="statement not covered" >  } else {</span>
+<span class="cstat-no" title="statement not covered" >    favs.push({ name: pokemon.value.name, id: pokemon.value.id })</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  localStorage.setItem(FAVORITES_KEY, JSON.stringify(favs))</span>
+<span class="cstat-no" title="statement not covered" >  isFav.value = !isFav.value</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+&lt;/script&gt;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-06-23T13:41:32.979Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    
