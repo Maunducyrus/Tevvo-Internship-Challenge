@@ -38,7 +38,7 @@ npm run test:coverage
 
 #### Test coverage screenshot:
 
-![Coverage Screenshot](./coverage.png)
+![Coverage Screenshot](./images/test.png)
 
 ---
 
