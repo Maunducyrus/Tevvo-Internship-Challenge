@@ -4,6 +4,8 @@ import Countries from '../views/Countries.vue'
 import CountryDetail from '../views/CountryDetail.vue'
 import Pokemon from '../views/Pokemon.vue'
 import PokemonDetail from '../views/PokemonDetail.vue'
+import Favorites from '../views/Favorites.vue'
+import SearchResults from '../views/SearchResults.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -11,6 +13,8 @@ const routes = [
   { path: '/countries/:code', name: 'CountryDetail', component: CountryDetail, props: true },
   { path: '/pokemon', name: 'Pokemon', component: Pokemon },
   { path: '/pokemon/:name', name: 'PokemonDetail', component: PokemonDetail, props: true },
+  { path: '/favorites', name: 'Favorites', component: Favorites },
+  { path: '/search', name: 'SearchResults', component: SearchResults },
 ]
 
 const router = createRouter({
