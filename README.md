@@ -9,7 +9,7 @@ A Vue 3 SPA to explore countries and related Pokémons.
 ## 🔧 Setup Instructions
 
 ```sh
-git clone https://github.com/yourusername/yourrepo.git
+git clone https://github.com/Maunducyrus/Tevvo-Internship-Challenge
 cd yourrepo
 npm install
 npm run dev
