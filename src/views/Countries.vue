@@ -82,7 +82,7 @@ onMounted(async () => {
   try {
   const res = await axios.get(
   'https://restcountries.com/v3.1/all?fields=cca3,name,region,capital,population,languages,flags'
-  )
+    )
     countries.value = res.data
   } catch (e) {
     error.value = 'Failed to load countries.'

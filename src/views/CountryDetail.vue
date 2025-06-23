@@ -64,7 +64,9 @@ const isFav = ref(false)
 
 onMounted(async () => {
   try {
-    const res = await axios.get(`https://restcountries.com/v3.1/alpha/${route.params.code}`)
+  const res = await axios.get(
+  `https://restcountries.com/v3.1/alpha/${route.params.code}?fields=cca3,name,region,capital,population,languages,flags`
+    )
     country.value = res.data[0]
     checkFav()
     fetchPokemons()
