@@ -4,7 +4,7 @@ A Vue 3 SPA to explore countries and related Pokémons.
 
 ## 🚀 Live Demo
 
-[Live Demo Link Here](https://your-demo-link.com)
+[Live Demo Link Here](https://tevvo-internship-challenge.vercel.app/)
 
 ## 🔧 Setup Instructions
 
