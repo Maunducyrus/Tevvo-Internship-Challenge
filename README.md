@@ -1,6 +1,53 @@
-# Vue 3 + Vite
+# Country Explorer
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Vue 3 SPA to explore countries and related Pokémons.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
-# Tevvo-Internship-Challenge
+## 🚀 Live Demo
+
+[Live Demo Link Here](https://your-demo-link.com)
+
+## 🔧 Setup Instructions
+
+```sh
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+npm install
+npm run dev
+```
+
+## 🔑 Auth Implementation
+
+Auth uses localStorage to store favorite countries.  
+No external authentication provider is used.
+
+## 🧪 Testing
+
+We use [Vitest](https://vitest.dev/) for unit testing.
+
+### Run tests
+
+```sh
+npm run test
+```
+
+### Run coverage report
+
+```sh
+npm run test:coverage
+```
+
+#### Test coverage screenshot:
+
+![Coverage Screenshot](./coverage.png)
+
+---
+
+## 📦 Project Structure
+
+```
+src/
+  components/
+  views/
+  utils/
+  ...
+```
